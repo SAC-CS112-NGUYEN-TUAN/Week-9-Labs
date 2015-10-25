@@ -27,16 +27,11 @@ public class Arraystest {
 		int randomnums;
 		String playerguess;
 		
-		winlose[0] = "Game is not play yet";
-		winlose[1] = "Game is not play yet";
-		winlose[2] = "Game is not play yet";
-		winlose[3] = "Game is not play yet";
-		winlose[4] = "Game is not play yet";
-		winlose[5] = "Game is not play yet";
-		winlose[6] = "Game is not play yet";
-		winlose[7] = "Game is not play yet";
-		winlose[8] = "Game is not play yet";
-		winlose[9] = "Game is not play yet"; // this part is ...
+		int e ;
+		
+		for (e = 0; e < winlose.length; e++){
+		winlose[e] = "Game is not play yet";}; // shorten codes by arrays , yay !
+		
 		for (i = 0; i < evenguess.length; i++){
 		
 			
