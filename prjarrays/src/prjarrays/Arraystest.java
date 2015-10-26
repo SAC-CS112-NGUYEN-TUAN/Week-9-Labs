@@ -24,8 +24,7 @@ public class Arraystest {
 		int i= 0;
 		double sumodd = 0;
 		double sumeven = 0;
-		int randomnums;
-		String playerguess;
+		RandomNum randomNo = new RandomNum();
 		
 		int e ;
 		
@@ -36,16 +35,18 @@ public class Arraystest {
 		
 			
 		//generate random number odd or even
-		randomnums = 1 + (int) (Math.random()*2);
-		System.out.println(randomnums); //debug
+		/**randomnums = 1 + (int) (Math.random()*2);
+		System.out.println(randomnums); **/
+			randomNo.generate();
 		
 		//dice is odd/even
 				String result;
-			    if ( randomnums % 2 == 0 )
-			         result = "even";
-			      else
+			    //if ( randomnums % 2 == 0 )
+			      if ( randomNo.getNum() % 2 == 0){
+					result = "even";}
+			      else {
 			         result = "odd";
-			    System.out.println(result);
+			    System.out.println(result);} 
 			    
 			    if (result.equals("even")){ cpueven[i] =1;}
 			    else {cpuodd[i] =1 ;}			    
