@@ -31,13 +31,16 @@ public class Arraystest {
 		for (e = 0; e < winlose.length; e++){
 		winlose[e] = "Game is not play yet";}; // shorten codes by arrays , yay !
 		
+		randomNo.highlow();
+		randomNo.generate();
+		
 		for (i = 0; i < evenguess.length; i++){
 		
 			
 		//generate random number odd or even
 		/**randomnums = 1 + (int) (Math.random()*2);
 		System.out.println(randomnums); **/
-			randomNo.generate();
+			
 		
 		//dice is odd/even
 				String result;
@@ -46,7 +49,8 @@ public class Arraystest {
 					result = "even";}
 			      else {
 			         result = "odd";
-			    System.out.println(result);} 
+			    System.out.println(result);
+			    } 
 			    
 			    if (result.equals("even")){ cpueven[i] =1;}
 			    else {cpuodd[i] =1 ;}			    
